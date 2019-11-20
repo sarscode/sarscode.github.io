@@ -28,3 +28,12 @@
     outline: none;
   }
 }
+
+// ----------------------------------------
+// mixins
+// ----------------------------------------
+@mixin mobile($breakpoint) {
+  @media only screen and (max-width: $breakpoint) {
+    @content;
+  }
+}

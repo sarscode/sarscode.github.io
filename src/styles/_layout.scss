@@ -14,6 +14,9 @@
   max-width: 900px;
   border-radius: 4px;
   box-shadow: 0 0 10px darken($purple, 15%);
+  @include mobile($breakpoint-sm) {
+    padding: 1rem;
+  }
   &__title {
     color: darken($purple, 50%);
   }

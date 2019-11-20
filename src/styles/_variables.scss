@@ -10,8 +10,8 @@ $white: #f7f7f7;
 // ---------------------------------------
 // Typography
 // ---------------------------------------
-$base-font-family: 'Fira Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-  'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Droid Sans', 'Helvetica Neue',
+$base-font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Droid Sans", "Helvetica Neue",
   sans-serif;
 
 // ---------------------------------------
@@ -20,5 +20,6 @@ $base-font-family: 'Fira Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
 $border-radius: 4px;
 
 // ---------------------------------------
-// Components
+// Breakpoints
 // ---------------------------------------
+$breakpoint-sm: 600px;

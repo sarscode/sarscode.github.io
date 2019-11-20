@@ -3,6 +3,9 @@ html {
   height: 100vh;
   width: 100vw;
   padding: 1rem;
+  @include mobile($breakpoint-sm) {
+    padding: 0.5rem;
+  }
 }
 
 * {
@@ -52,6 +55,9 @@ p {
 main {
   padding: 1rem;
   margin: 2rem auto;
+  @include mobile($breakpoint-sm) {
+    padding: 0.5rem;
+  }
 }
 
 input {
@@ -83,12 +89,18 @@ hr {
 
 ::-webkit-scrollbar {
   width: 4px;
+  @include mobile($breakpoint-sm) {
+    width: 2px;
+  }
 }
 
 ::-webkit-scrollbar-track {
   border-radius: 4px;
   background: lighten($purple, 10%);
   width: 4px;
+  @include mobile($breakpoint-sm) {
+    width: 2px;
+  }
 }
 
 ::-webkit-scrollbar-thumb {
@@ -96,6 +108,5 @@ hr {
   border-radius: 4px;
   &:hover {
     background: $white;
-    width: 10px;
   }
 }
