@@ -17,14 +17,32 @@ class ContactForm extends Component {
     });
   }
 
+  handleSubmit(event) {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: window.encode({ "form-name": "contact", ...this.state })
+    })
+      .then(() => {
+        alert("Success!");
+        this.setState({
+          name: "",
+          email: "",
+          message: ""
+        });
+      })
+      .catch(error => alert(error));
+    event.preventDefault();
+  }
+
   render() {
     const { name, email, message } = this.state;
     return (
       <form
-        name="contact"
         method="POST"
         data-netlify="true"
         className="content"
+        onSubmit={this.handleSubmit.bind(this)}
       >
         <Input
           name="name"
