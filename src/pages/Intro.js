@@ -1,5 +1,5 @@
-import React from 'react';
-import Social from '../components/Social';
+import React from "react";
+import Social from "../components/Social";
 
 function Intro() {
   return (
@@ -18,8 +18,10 @@ function Intro() {
       </p>
       <p>
         This is the first version of my personal site and it's opensource, you
-        can view the{' '}
-        <a href="https://github.com/sarscode">source code on github.</a>
+        can view the{" "}
+        <a href="https://github.com/sarscode/sarscode.dev">
+          source code on github.
+        </a>
       </p>
       <Social />
     </main>

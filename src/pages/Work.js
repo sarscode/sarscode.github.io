@@ -1,6 +1,6 @@
-import React from 'react';
-import SarscodePreview from '../assets/sarscode-preview.png';
-import { Link } from 'react-router-dom';
+import React from "react";
+import SarscodePreview from "../assets/sarscode-preview.png";
+import { Link } from "react-router-dom";
 
 function Work() {
   return (
@@ -18,25 +18,28 @@ function Work() {
           <h3 className="work__title">sarscode.dev</h3>
           <p>
             <strong>sarscode.dev</strong> is my personal website which is what
-            you are currently viewing. It's a client side web app built with{' '}
-            <a href="https://reactjs.org">ReactJS</a> and{' '}
-            <a href="sass-lang.com">SCSS</a>, and deployed on{' '}
+            you are currently viewing. It's a client side web app built with{" "}
+            <a href="https://reactjs.org">ReactJS</a> and{" "}
+            <a href="sass-lang.com">SCSS</a>, and deployed on{" "}
             <a href="https://www.netlify.com/">Netlify</a>.
           </p>
           <p>
-            <a href="https://github.com/sarscode" className="work__link">
+            <a
+              href="https://github.com/sarscode/sarscode.dev"
+              className="work__link"
+            >
               View source code on github
             </a>
           </p>
           <p>
-            View more open source projects on my{' '}
+            View more open source projects on my{" "}
             <a href="https://github.com/sarscode" className="work__link">
               github page
             </a>
           </p>
           <img
             src={SarscodePreview}
-            alt="sarscode.dev project preview"
+            alt="sarscode.dev project snapshot"
             className="work__img"
           />
         </section>
@@ -54,8 +57,8 @@ function Work() {
           <h2 className="work__title">Employment</h2>
           <p>
             I'm currently available for full-time or part-time job, onsite or
-            remote. Want to hire me, send me an email{' '}
-            <a href="mailto:iamsarscode@gmail.com">iamsarscode@gmail.com</a> or{' '}
+            remote. Want to hire me, send me an email{" "}
+            <a href="mailto:iamsarscode@gmail.com">iamsarscode@gmail.com</a> or{" "}
             <Link to="/contact">leave me a message.</Link>
           </p>
         </section>
