@@ -45,6 +45,7 @@ class ContactForm extends Component {
     const { name, email, message } = this.state;
     return (
       <form
+        name="contact"
         method="POST"
         data-netlify="true"
         className="content"
