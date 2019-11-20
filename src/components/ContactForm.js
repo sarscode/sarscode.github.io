@@ -20,7 +20,12 @@ class ContactForm extends Component {
   render() {
     const { name, email, message } = this.state;
     return (
-      <form method="POST" data-netlify="true" className="content">
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        className="content"
+      >
         <Input
           name="name"
           placeholder="Your Name"
