@@ -6,6 +6,7 @@
     "email": "iamsarscode@gmail.com",
     "url": "https://sarscode.dev"
   },
+  "license": "MIT",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
