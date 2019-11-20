@@ -1,6 +1,12 @@
 import React, { Component } from "react";
 import Input from "../components/Input";
 
+const encode = data => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
+
 class ContactForm extends Component {
   constructor(props) {
     super(props);
@@ -21,7 +27,7 @@ class ContactForm extends Component {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: window.encode({ "form-name": "contact", ...this.state })
+      body: encode({ "form-name": "contact", ...this.state })
     })
       .then(() => {
         alert("Success!");

@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Work from "./pages/Work";
 import Writing from "./pages/Writing";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/contact" component={Contact} />
           <Route path="/work" component={Work} />
           <Route path="/writing" component={Writing} />
+          <Route render={NotFound} />
         </Switch>
       </div>
     </Router>
