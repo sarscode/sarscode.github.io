@@ -17,21 +17,10 @@ class ContactForm extends Component {
     });
   }
 
-  handleSubmit(event) {
-    console.log(this.state);
-    event.preventDefault();
-  }
-
   render() {
     const { name, email, message } = this.state;
     return (
-      <form
-        action=""
-        method="POST"
-        data-netlify="true"
-        className="content"
-        onSubmit={this.handleSubmit.bind(this)}
-      >
+      <form method="POST" data-netlify="true" className="content">
         <Input
           name="name"
           placeholder="Your Name"
