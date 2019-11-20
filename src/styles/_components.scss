@@ -1,0 +1,75 @@
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 0.7rem 1rem;
+  text-decoration: none;
+  &__text {
+    padding-left: 0.5rem;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.navlink {
+  color: darken($white, 15%);
+  font-size: 0.98rem;
+  font-weight: bold;
+  padding: 0.7rem 1rem;
+  text-decoration: none;
+  &::after {
+    content: "";
+    background: darken($white, 15%);
+    border-radius: 4px;
+    display: block;
+    width: 0%;
+    height: 2px;
+  }
+  &--active {
+    color: $white;
+    &::after {
+      @extend %navlink;
+      background: $white;
+      width: 100%;
+    }
+  }
+  &:hover {
+    color: $white;
+    &::after {
+      @extend %navlink;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+}
+
+.social {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+  &__link {
+    text-decoration: none;
+    padding: 0.7rem 1rem;
+  }
+}
+
+.app {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  padding: 1rem;
+  overflow: hidden auto;
+  // Styling scrollbars for moz
+  scrollbar-color: darken($white, 10%) lighten($purple, 10%);
+  scrollbar-width: thin;
+}
