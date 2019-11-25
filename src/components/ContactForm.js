@@ -38,6 +38,7 @@ class ContactForm extends Component {
         });
       })
       .catch(error => alert(error));
+
     event.preventDefault();
   }
 
@@ -51,6 +52,7 @@ class ContactForm extends Component {
         className="content"
         onSubmit={this.handleSubmit.bind(this)}
       >
+        <input type="hidden" name="form-name" value="contact" />
         <Input
           name="name"
           placeholder="Your Name"
@@ -68,7 +70,6 @@ class ContactForm extends Component {
         />
         <textarea
           name="message"
-          id=""
           cols="30"
           rows="5"
           placeholder="Your message"
