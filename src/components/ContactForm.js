@@ -52,11 +52,7 @@ class ContactForm extends Component {
         className="content"
         onSubmit={this.handleSubmit.bind(this)}
       >
-<<<<<<< HEAD
         <input type="hidden" name="form-name" value="contact" />
-=======
-        <input type="hidden" name="contact" value="contact" />
->>>>>>> 0b22ccaa678f86b06e0bfc2481fd15ddef969feb
         <Input
           name="name"
           placeholder="Your Name"
